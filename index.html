@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Todo List on pure JavaScript</title>
+    <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Roboto, "Helvetica Neue", "Liberation Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: MidnightBlue;
+      background-color: PowderBlue;
+      }
+  </style>
+</head>
+
+<body>
+
+  <div class="todo">
+    <div class="todo__input">
+      <input class="todo__text" type="text">
+      <span class="todo__add"></span>
+    </div>
+    <select class="todo__case">
+      <option value="active">To do</option>
+      <option value="completed">Completed</option>
+      <option value="deleted">Deleted</option>
+    </select>
+    <ul class="todo__items" data-todo-option="active"></ul>
+   <div class="btn-group">
+    <button type="button" class="btn1" onclick = "changeColor1();">Even</button>
+    <button type="button" class="btn1" onclick = "changeColor2();";>Odd</button>
+    <button type="button" class="btn1" onclick="deleteLast();">Delete Last</button>
+    <button type="button" class="btn1" onclick="deleteFirst();">Delete First</button>
+    </div>
+</div>
+
+</body>
+
+</html>
